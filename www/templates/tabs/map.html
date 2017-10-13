@@ -1,0 +1,66 @@
+<ion-view title="">
+ <ion-content class="padding" on-swipe-right="goBack()" on-swipe-left="goForward()">
+ <div class="content">
+  <div class="list">
+   <label class="item item-input">
+      <span class="input-label">District</span>
+      <button class="button input-modal-select" modal-select="" ng-model="newDistrict" hide-reset="true" options="Distric" on-select="selectNewDistrict(newValue, oldValue)" option-getter="getNewDistrict(option)" modal-title="Select a district">
+         {{currentDisctrict}}
+          <div class="option">
+            {{option.district_name}}
+          </div>
+        </button>
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Municipality</span>
+      <button class="button input-modal-select" modal-select="" ng-model="newMunicipality" hide-reset="true" options="Municipal" on-select="selectNewMunicipality(newValue, oldValue)"  option-getter="getNewMunicipality(option)" modal-title="Select a municipality">
+         {{currentMunicipality}}
+          <div class="option">
+            {{option.municipality_name}}
+          </div>
+        </button>
+    </label>
+  </div>
+  </div>
+   <div class="map_content from-top">
+   <div> 
+      <input id="pac-input" class="controls" type="text" value="{{selectedMunicipality}}" placeholder="Search Box">
+    </div>
+ 		<div id="map" data-tap-disabled="false"></div>
+  
+ </div>
+   <div class="statistic-content">
+      <p>Quick stats</p>
+      <table>
+        <thead>
+            <tr>
+              <td>
+                Status of poster
+              </td>
+              <td>
+                Count
+              </td>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color: yellow;">In Progress</td>
+            <td>{{stats.inprogress}}</td>
+          </tr>
+          <tr>
+            <td style="color: green;">Posted</td>
+            <td>{{stats.posted}}</td>
+          </tr>
+           <tr>
+            <td style="color: red;">Removed</td>
+            <td>{{stats.removed}}</td>
+          </tr>
+           <tr>
+            <td style="color: blue;">Total</td>
+            <td>{{stats.total}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+ </ion-content>
+</ion-view>

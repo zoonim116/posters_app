@@ -1,0 +1,56 @@
+<ion-view title="">
+ <ion-content class="padding" on-swipe-right="goBack()" on-swipe-left="goForward()">
+<div class="content from-top">
+  <div class="list">
+    <label class="item item-input">
+      <span class="input-label">Firstname</span>
+      <input type="text" name="Firstname" ng-model="helper.Firstname">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Lastname</span>
+      <input type="text" name="Lastname" ng-model="helper.Lastname">
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Party</span>
+      <button class="button input-modal-select" modal-select="" ng-model="newParty" hide-reset="true" options="Parties" option-getter="getParty(option)" modal-title="Select a party" on-select="getNewParty(newValue, oldValue)">
+         {{newParty.name}}
+          <div class="option">
+            {{option.party_name}}
+          </div>
+        </button>
+    </label>
+    <label class="item item-input">
+      <span class="input-label">District</span>
+      <button class="button input-modal-select" modal-select="" ng-model="newDistrict" hide-reset="true" options="Districts" on-select="changeMunicipality(newValue, oldValue)" option-getter="getDistrict(option)" modal-title="Select a district">
+         {{newDistrict.name}}
+          <div class="option">
+            {{option.district_name}}
+          </div>
+        </button>
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Municipality</span>
+      <button class="button input-modal-select" modal-select="" ng-model="newMunicipality" hide-reset="true" options="Municipalitys" option-getter="getMunicipality(option)" modal-title="Select a municipality" on-select="getNewMunicipality(newValue, oldValue)">
+         {{newMunicipality.name}}
+          <div class="option">
+            {{option.municipality_name}}
+          </div>
+        </button>
+    </label>
+    <label class="item item-input">
+      <span class="input-label">Area</span>
+      <button class="button input-modal-select" modal-select="" ng-model="newArea" hide-reset="true" options="Areas" option-getter="getArea(option)" modal-title="Select a area" on-select="getNewArea(newValue, oldValue)">
+         {{newArea.name}}
+          <div class="option">
+            {{option.area_name}}
+          </div>
+        </button>
+    </label>
+  </div>
+</div>
+<div class="update_profile_button_wrap">
+    <span class="success">{{success_update}}</span>
+      <button class="button button-block button-positive" ng-click="updateProfile()">Update Profile</button>
+  </div>
+ </ion-content>
+</ion-view>

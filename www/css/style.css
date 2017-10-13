@@ -1,0 +1,149 @@
+/* Empty. Add your own CSS if you like */
+.list {
+	position: relative;
+padding-top: 1px;
+padding-bottom: 1px;
+padding-left: 0;
+margin-bottom: 20px;
+}
+
+body, .ionic-body {
+	overflow: visible;
+}
+
+.has-header {
+	top: 84px;
+}
+
+.statistic-content table td {
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.action-sheet-backdrop {
+  z-index: 999999999999999;
+}
+
+table tbody tr td:last-child {
+  text-align: center;
+}
+
+.statistic-content table thead td {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.statistic-content table {
+  width: 70%;
+}
+
+.from-top {
+	top: 30px;
+}
+
+.statistic-content {
+  padding-top: 30px;
+}
+
+.statistic-content p {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.statistic-content table {
+  margin: 0 auto;
+}
+
+.input-modal-select {
+	background: transparent !important;
+	padding-left: 0 !important;
+}
+.input-modal-select.activated {
+	border-color: transparent !important;
+}
+
+.update_profile_button_wrap button {
+	top: 30px;
+}
+
+.my-location {
+	border: 0px;
+}
+
+.success {
+	color: green;
+}
+
+#map, #map1 {
+	_position: inherit !important;
+	width: 100%;
+    height: 300px;
+}
+
+#pac-input {
+    height: 42px !important;
+    top: 10px !important;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    color: rgb(86, 86, 86);
+	box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+}
+
+#pac-input::-webkit-input-placeholder {
+	padding-left: 5px;
+}
+
+.map_content {
+	position: initial;
+	margin-top: 15px;
+}
+
+.map_content1 {
+  position: initial;
+  margin-top: 45px;
+}
+
+.scroll {
+    height: 100%;
+}
+
+
+
+.transparent {
+  background: transparent !important;
+}
+.image-modal {
+  width: 100% !important;
+  height: 100%;
+  top: 0 !important;
+  left: 0 !important;
+}
+.fullscreen-image {
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.slider {
+  width: 100%;
+  height: 100%;
+}
+
+p.info {
+  position: absolute;
+  bottom: 55px;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 28px;
+  color: #ffffff;
+}

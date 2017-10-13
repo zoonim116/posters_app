@@ -1,0 +1,8 @@
+<ion-view title="Posters">
+ <ion-content class="padding">
+ <div ng-repeat="poster in myPosters" ng-click="showImg(poster)" class="item item-thumbnail-left">
+ 	<img ng-src="{{poster.urlphoto}}">
+ 	<h2>{{poster.address}}</h2>
+ </div>
+ </ion-content>
+</ion-view>

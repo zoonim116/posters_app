@@ -1,0 +1,30 @@
+  <ion-header-bar align-title="left" class="bar-positive">
+  <!-- <div class="col col-80"></div> -->
+  <div class="buttons col col-33 col-offset-67">
+      <button class="button" ng-click="logout()">
+        <i class="icon ion-log-out"></i>
+        Logout
+      </button>
+  </div>
+  </ion-header-bar>
+  <ion-tabs class="tabs-positive">
+    <ion-tab title="Profile" icon-off="ion-person" icon-on="ion-person" href="#/home/profile">
+        <ion-nav-view name="profile" class="animated {{direction}}" tabs-animation>{{direction}}</ion-nav-view>
+    </ion-tab>
+    <ion-tab title="Map" icon-off="ion-map" icon-on="ion-map"  href="#/home/map">
+        <ion-nav-view name="map" class="{{direction}} " tabs-animation>{{direction}}</ion-nav-view>
+    </ion-tab>
+    <ion-tab title="Routes" icon-off="ion-ios-navigate" icon-on="ion-ios-navigate" href="#/home/routes">
+      <ion-nav-view name="routes" class="{{direction}} " tabs-animation>{{direction}}</ion-nav-view>
+    </ion-tab>
+    <ion-tab title="Posters" icon-off="ion-person-stalker" icon-on="ion-person-stalker" href="#/home/posters">
+        <ion-nav-view name="posters" class="{{direction}} " tabs-animation>{{direction}}</ion-nav-view>
+    </ion-tab>
+</ion-tabs>
+
+ <ion-nav-view>
+   <ion-view>
+     <ion-content>
+     </ion-content>
+   </ion-view>
+</ion-nav-view>

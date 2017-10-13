@@ -1,0 +1,30 @@
+<ion-view title="">
+ <ion-content class="padding">
+	<div class="content from-top">
+		<div class="list">
+			<label class="item item-input">
+		      <span class="input-label">Your location</span>
+		      <input type="button" class="my-location" name="Location" ng-click="getMyLocation()" value="{{helper.Location}}" ng-model="helper.Location">
+		    </label>
+		    <label class="item item-input">
+		      <span class="input-label">Target</span>
+		      <input type="text" name="Target" disabled="true" value="{{helper.Target}}" ng-model="helper.Target">
+		    </label>
+		       <label class="item item-input">
+			      <span class="input-label">Mode</span>
+			      <button class="button input-modal-select" modal-select="" ng-model="Mode" hide-reset="true" options="Modes" on-select="changeMode(newValue, oldValue)" option-getter="getMode(option)" modal-title="Select a mode">
+			         {{Mode.name}}
+			          <div class="option">
+			            {{option.name}}
+			          </div>
+			        </button>
+			    </label>
+		</div>
+	</div>
+	<div class="map_content1 from-top">
+ 		<div id="map1" data-tap-disabled="true"></div>
+
+	 </div>
+	 <div id="right-panel"></div>
+ </ion-content>
+</ion-view>
